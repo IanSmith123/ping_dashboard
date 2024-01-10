@@ -24,15 +24,12 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 2,
+  "id": 1,
   "links": [],
   "liveNow": false,
   "panels": [
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fffb2ebe-5cb7-480c-974e-a63b73d5867f"
-      },
+      "datasource": {},
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -78,7 +75,7 @@
         "textMode": "value",
         "wideLayout": true
       },
-      "pluginVersion": "10.2.2",
+      "pluginVersion": "10.2.3",
       "targets": [
         {
           "datasource": {
@@ -86,7 +83,7 @@
             "uid": "s_tCJzDVk"
           },
           "disableTextWrap": false,
-          "editorMode": "builder",
+          "editorMode": "code",
           "expr": "ping_rtt_mean_seconds{ip=\"223.5.5.5\"} * 1000",
           "fullMetaSearch": false,
           "includeNullMetadata": true,
@@ -100,10 +97,7 @@
       "type": "stat"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fffb2ebe-5cb7-480c-974e-a63b73d5867f"
-      },
+      "datasource": {},
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -185,7 +179,7 @@
             "type": "prometheus",
             "uid": "s_tCJzDVk"
           },
-          "editorMode": "code",
+          "editorMode": "builder",
           "exemplar": false,
           "expr": "ping_rtt_mean_seconds{target=\"223.5.5.5\"} * 1000",
           "instant": false,
@@ -210,10 +204,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fffb2ebe-5cb7-480c-974e-a63b73d5867f"
-      },
+      "datasource": {},
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -296,7 +287,7 @@
             "uid": "s_tCJzDVk"
           },
           "disableTextWrap": false,
-          "editorMode": "builder",
+          "editorMode": "code",
           "exemplar": false,
           "expr": "ping_loss_ratio * 100",
           "fullMetaSearch": false,
@@ -632,7 +623,7 @@
     }
   ],
   "refresh": "5s",
-  "schemaVersion": 38,
+  "schemaVersion": 39,
   "tags": [],
   "templating": {
     "list": []
@@ -645,6 +636,6 @@
   "timezone": "",
   "title": "Ping dashboard",
   "uid": "oZVdpEDIz",
-  "version": 6,
+  "version": 2,
   "weekStart": ""
 }
